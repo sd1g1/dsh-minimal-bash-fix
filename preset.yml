@@ -1,0 +1,3 @@
+name: 极简模式（快速 bash）
+description: 基于 minimal，优化 persistent bash 的 PTY 完成检测，降低单次调用延迟。
+order: 3

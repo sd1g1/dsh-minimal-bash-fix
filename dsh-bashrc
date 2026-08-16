@@ -1,0 +1,4 @@
+# DSH persistent bash 优化：让 PS1 与 dsh-terminal-bash 期望的 "dsh> " 对齐
+# 这样 PTY 后端可以走快速完成路径，避免每次命令等待 idleSilenceMs + handoffGraceMs (约 3.5s)
+PS1="dsh> "
+PROMPT_COMMAND='printf "\033]133;D;%s\007" "$?"; PS1="dsh> "'
