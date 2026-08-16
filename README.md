@@ -9,18 +9,42 @@
 - `dsh-bashrc`：persistent bash 使用的 rcfile
 - `persistent-bash-idle-silence-fix.md`：优化说明与风险记录
 
-## 使用
+## 安装方法
 
-将 `preset.yml` 和 `agent.cordis.yml` 放到：
+### 1. 克隆仓库
 
-```text
-~/.dsh/.agent-presets/minimal-fast/
+```bash
+git clone https://github.com/sd1g1/dsh-minimal-fast-preset.git
+cd dsh-minimal-fast-preset
 ```
 
-将 `dsh-bashrc` 放到：
+### 2. 安装 preset 文件
 
-```text
-~/.dsh/dsh-bashrc
+```bash
+mkdir -p ~/.dsh/.agent-presets/minimal-fast
+cp preset.yml agent.cordis.yml ~/.dsh/.agent-presets/minimal-fast/
+cp persistent-bash-idle-silence-fix.md ~/.dsh/.agent-presets/minimal-fast/
+cp dsh-bashrc ~/.dsh/dsh-bashrc
 ```
 
-然后在 DSH 中选择 `minimal-fast` preset。
+### 3. 使用 npx dsh 启动
+
+```bash
+npx dsh web
+```
+
+启动后在 DSH 中选择 `minimal-fast` preset。
+
+## 验证
+
+```bash
+echo "PS1=[$PS1]"
+```
+
+如果输出：
+
+```text
+PS1=[dsh> ]
+```
+
+说明快速路径已生效。
