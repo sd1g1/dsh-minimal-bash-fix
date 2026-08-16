@@ -2,7 +2,7 @@
   "name": "dsh-minimal-bash-fix",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "DSH agent preset 分发包：修复极简模式（minimal）预设中 persistent bash 工具的完成检测 bug，并同步 minimal-fast preset 到 ~/.dsh/.agent-presets/minimal-fast。",
+  "description": "DSH agent preset 分发包：修复极简模式（minimal）预设中 persistent bash 工具约 3.5s 延迟返回的完成检测 bug，并同步 minimal-fast preset 到 ~/.dsh/.agent-presets/minimal-fast。",
   "type": "module",
   "main": "lib/index.js",
   "exports": {

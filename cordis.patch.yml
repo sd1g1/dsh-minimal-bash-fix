@@ -2,7 +2,7 @@
 # profile roster. Applied as a profile bundle layer (the `dsh.bundle.patch`
 # manifest field); activate with:
 #
-#   dsh plugin --profile web add -w github:sd1g1/dsh-minimal-bash-fix#v0.1.0
+#   dsh plugin --profile web add -w github:sd1g1/dsh-minimal-bash-fix
 #
 # The row's host half copies the packaged `minimal-fast` agent preset into
 # the user preset root (~/.dsh/.agent-presets/minimal-fast) on boot, and also
