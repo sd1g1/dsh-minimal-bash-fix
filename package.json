@@ -1,8 +1,8 @@
 {
-  "name": "dsh-minimal-fast-preset",
+  "name": "dsh-minimal-bash-fix",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "DSH agent preset 分发包：基于 minimal 优化 persistent bash 延迟，安装后自动同步到 ~/.dsh/.agent-presets/minimal-fast。",
+  "description": "DSH agent preset 分发包：修复极简模式（minimal）预设中 persistent bash 工具的完成检测 bug，并同步 minimal-fast preset 到 ~/.dsh/.agent-presets/minimal-fast。",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -31,5 +31,13 @@
   ],
   "engines": {
     "node": ">=20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sd1g1/dsh-minimal-bash-fix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sd1g1/dsh-minimal-bash-fix/issues"
+  },
+  "homepage": "https://github.com/sd1g1/dsh-minimal-bash-fix#readme"
 }

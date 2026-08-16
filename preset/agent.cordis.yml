@@ -1,4 +1,4 @@
-# Local agent preset: minimal + persistent bash latency optimization.
+# Local agent preset: minimal + persistent bash completion bug fix.
 # Uses a custom rcfile to align PS1 with "dsh> " and a smaller pollIntervalMs.
 
 - id: persona
