@@ -1,0 +1,12 @@
+# dsh-minimal-fast-preset bundle patch: inserts the installer row into the web
+# profile roster. Applied as a profile bundle layer (the `dsh.bundle.patch`
+# manifest field); activate with:
+#
+#   dsh plugin --profile web add -w github:sd1g1/dsh-minimal-fast-preset#v0.1.0
+#
+# The row's host half copies the packaged `minimal-fast` agent preset into
+# the user preset root (~/.dsh/.agent-presets/minimal-fast) on boot, and also
+# installs the required `dsh-bashrc` helper.
+- insert:
+    - id: dsh-minimal-fast-preset
+      name: dsh-minimal-fast-preset

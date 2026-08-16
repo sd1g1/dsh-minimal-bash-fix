@@ -1,0 +1,35 @@
+{
+  "name": "dsh-minimal-fast-preset",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "DSH agent preset 分发包：基于 minimal 优化 persistent bash 延迟，安装后自动同步到 ~/.dsh/.agent-presets/minimal-fast。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "preset",
+    "dsh-bashrc",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "agent-preset",
+    "minimal"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
